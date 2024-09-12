@@ -83,6 +83,7 @@ namespace APIPRUEBAS.Controllers
 
         [HttpPut]
         [Route("Editar")]
+        //Editar el Producto
         public IActionResult Editar([FromBody] Producto objeto)
         {
             Producto oProducto = _dbcontext.Productos.Find(objeto.IdProducto);
